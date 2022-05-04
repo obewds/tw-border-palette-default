@@ -1,1 +1,1 @@
-export { default as ViteVueTsCompoPkgStarter } from './components/ViteVueTsCompoPkgStarter.vue';
+export { default as twBorderPaletteDefault } from './data/tw-border-palette-default';
