@@ -11,9 +11,9 @@ This is an example GitHub Pages site and is NOT intended for actual use in real 
 :::
 
 
-# @obewds/vite-vue-ts-compo-pkg-starter
+# @obewds/tw-border-palette-default
 
-Welcome to the docs page for OBE:WDS's `ViteVueTsCompoPkgStarter.vue` component for [Vue.js](https://vuejs.org/)!
+Welcome to the docs page for OBE:WDS's `TwBorderPaletteDefault.vue` component for [Vue.js](https://vuejs.org/)!
 
 
 
@@ -21,7 +21,7 @@ Welcome to the docs page for OBE:WDS's `ViteVueTsCompoPkgStarter.vue` component 
 ## Installation
 
 ```bash
-npm install @obewds/vite-vue-ts-compo-pkg-starter --save-dev
+npm install @obewds/tw-border-palette-default --save-dev
 ```
 
 
@@ -36,7 +36,7 @@ npm install @obewds/vite-vue-ts-compo-pkg-starter --save-dev
 
 ```html{2}
 <template>
-    <ViteVueTsCompoPkgStarter/>
+    <TwBorderPaletteDefault/>
 </template>
 ```
 
@@ -47,7 +47,7 @@ npm install @obewds/vite-vue-ts-compo-pkg-starter --save-dev
 
 ```html{2}
 <script setup lang="ts">
-    import { ViteVueTsCompoPkgStarter } from '@obewds/vite-vue-ts-compo-pkg-starter'
+    import { TwBorderPaletteDefault } from '@obewds/tw-border-palette-default'
 </script>
 ```
 
@@ -59,10 +59,10 @@ npm install @obewds/vite-vue-ts-compo-pkg-starter --save-dev
 ```html{3,6}
 <script lang="ts">
     import { defineComponent } from 'vue'
-    import { ViteVueTsCompoPkgStarter } from '@obewds/vite-vue-ts-compo-pkg-starter'
+    import { TwBorderPaletteDefault } from '@obewds/tw-border-palette-default'
 
     export default defineComponent({
-        components: { ViteVueTsCompoPkgStarter }
+        components: { TwBorderPaletteDefault }
     })
 </script>
 ```
@@ -84,7 +84,7 @@ npm install @obewds/vite-vue-ts-compo-pkg-starter --save-dev
 
 ```html{2}
 <template>
-    <ViteVueTsCompoPkgStarter text="My text prop string"/>
+    <TwBorderPaletteDefault text="My text prop string"/>
 </template>
 ```
 
@@ -110,9 +110,9 @@ If both the `text` prop and `slot` content are used, then the `text` prop takes 
 
 ```html{2-4}
 <template>
-    <ViteVueTsCompoPkgStarter>
+    <TwBorderPaletteDefault>
         My slot content
-    </ViteVueTsCompoPkgStarter>
+    </TwBorderPaletteDefault>
 </template>
 ```
 
@@ -132,7 +132,7 @@ If both the `text` prop and `slot` content are used, then the `text` prop takes 
 ## Uninstall
 
 ```bash
-npm uninstall @obewds/vite-vue-ts-compo-pkg-starter
+npm uninstall @obewds/tw-border-palette-default
 ```
 
 
