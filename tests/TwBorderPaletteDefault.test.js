@@ -30,7 +30,7 @@ test('twBorderPaletteDefault.default.colors component returns an object with a t
 
 test('twBorderPaletteDefault component returns an object with the standard five default color names', async () => {
 
-    expect(twBorderPaletteDefault.default.colors['default']).toBe('')
+    expect(twBorderPaletteDefault.default.colors['default']).toBeTruthy()
     expect(twBorderPaletteDefault.default.colors['error']).toBeTruthy()
     expect(twBorderPaletteDefault.default.colors['primary']).toBeTruthy()
     expect(twBorderPaletteDefault.default.colors['secondary']).toBeTruthy()

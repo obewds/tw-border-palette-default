@@ -1,11 +1,12 @@
 var twBorderPaletteDefault = {
   "default": {
     colors: {
-      "default": "",
-      "error": "text-white bg-rose-500 dark:bg-rose-600",
-      "primary": "text-white bg-blue-500 dark:bg-blue-600",
-      "secondary": "text-white bg-violet-500 dark:bg-violet-600",
-      "success": "text-white bg-green-500 dark:bg-green-600"
+      "": "",
+      "default": "border-gray-200 dark:border-gray-600",
+      "error": "border-rose-600 dark:border-rose-300",
+      "primary": "border-blue-600 dark:border-blue-300",
+      "secondary": "border-violet-600 dark:border-violet-300",
+      "success": "border-green-600 dark:border-green-300"
     }
   }
 };
