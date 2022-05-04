@@ -5,7 +5,14 @@
 
 <script setup lang="ts">
 
-    import TwBorderPaletteDefault from '@/components/TwBorderPaletteDefault.vue'
+    import { twBorderPaletteDefault } from '../index'
+
+    const tw = {
+        flex: 'flex justify-center flex-wrap pt-2 pb-6',
+        heading: 'block text-xl bg-green-500 bg-opacity-25 text-green-800 py-1',
+        mark: 'px-1',
+        span: 'px-2 py-1',
+    }
 
 </script>
 
@@ -16,7 +23,17 @@
     
     <div class="bg-white text-center border-t-2 border-b-2 border-green-500 border-dashed py-24">
 
-        <TwBorderPaletteDefault/>
+        <strong :class="tw.heading">
+            twBorderPaletteDefault.default.colors values
+        </strong>
+
+        <div :class="tw.flex">
+            <span :class="tw.span" v-for="(color, index) in twBorderPaletteDefault.default.colors">
+                <div :class="tw.mark" :key="index">
+                    "{{ index }}" : "{{ color }}"
+                </div>
+            </span>
+        </div>
 
     </div>
 

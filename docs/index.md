@@ -6,14 +6,13 @@ head:
 ---
 
 
-::: danger
-This is an example GitHub Pages site and is NOT intended for actual use in real projects/products!
-:::
 
 
 # @obewds/tw-border-palette-default
 
-Welcome to the docs page for OBE:WDS's `TwBorderPaletteDefault.vue` component for [Vue.js](https://vuejs.org/)!
+Welcome to the docs page for OBE:WDS's `twBorderPaletteDefault` component for [Vue.js](https://vuejs.org/)!
+
+<br>
 
 
 
@@ -24,107 +23,59 @@ Welcome to the docs page for OBE:WDS's `TwBorderPaletteDefault.vue` component fo
 npm install @obewds/tw-border-palette-default --save-dev
 ```
 
-
-
-
-## Import Component
+<br>
 
 
 
 
-### Template syntax
+## Object Schema
 
-```html{2}
-<template>
-    <TwBorderPaletteDefault/>
-</template>
+The object returned when importing Tailwind CSS background default color palette has the following schema:
+
+```javascript
+{
+    'default': {
+        colors: {
+            'default': '',
+            'error': '...',
+            'primary': '...',
+            'secondary': '...',
+            'success': '...',
+        },
+    },
+}
 ```
 
+<br>
 
 
 
-### Script setup syntax
 
-```html{2}
+
+## Use Example
+
+```html{3,8,16}
 <script setup lang="ts">
-    import { TwBorderPaletteDefault } from '@obewds/tw-border-palette-default'
-</script>
-```
 
+    import { twBorderPaletteDefault } from '@obewds/tw-border-palette-default'
 
-
-
-### Composition API syntax
-
-```html{3,6}
-<script lang="ts">
-    import { defineComponent } from 'vue'
-    import { TwBorderPaletteDefault } from '@obewds/tw-border-palette-default'
-
-    export default defineComponent({
-        components: { TwBorderPaletteDefault }
+    const props = defineProps({
+        borderClasses: {
+            type: String,
+            default: twBorderPaletteDefault.default.colors.primary,
+        },
     })
+
 </script>
-```
 
-
-
-
-## Props
-
-
-
-
-### text
-
-:white_check_mark: - Type `String`  
-:x: - Not Required  
-:x: - Doesn't Validate
-
-
-```html{2}
 <template>
-    <TwBorderPaletteDefault text="My text prop string"/>
+
+    <div :class="borderClasses">
+        {{ borderClasses }}
+    </div>
+
 </template>
 ```
-
-Outputs:
-
-```html
-<div>My text prop string</div>
-```
-
-::: warning
-If both the `text` prop and `slot` content are used, then the `text` prop takes precidence and the `slot` content will **NOT** render!
-:::
-
-
-
-
-## Slots
-
-
-
-
-### default
-
-```html{2-4}
-<template>
-    <TwBorderPaletteDefault>
-        My slot content
-    </TwBorderPaletteDefault>
-</template>
-```
-
-Outputs:
-
-```html
-<div>My slot content</div>
-```
-
-::: danger
-If both the `text` prop and `slot` content are used, then the `text` prop takes precidence and the `slot` content will **NOT** render!
-:::
 
 
 

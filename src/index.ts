@@ -1,1 +1,1 @@
-export { default as TwBorderPaletteDefault } from './components/TwBorderPaletteDefault.vue'
+export { default as twBorderPaletteDefault } from './data/tw-border-palette-default'

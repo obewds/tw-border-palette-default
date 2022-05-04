@@ -1,44 +1,39 @@
 // ./tests/TwBorderPaletteDefault.test.js
 
-import { mount } from '@vue/test-utils'
-import TwBorderPaletteDefault from '../src/components/TwBorderPaletteDefault.vue'
+import { twBorderPaletteDefault } from '../src/index'
 
 
 
-test('TwBorderPaletteDefault.vue component mounts successfully', async () => {
+test('twBorderPaletteDefault component returns a truthy value', async () => {
 
-    expect(TwBorderPaletteDefault).toBeTruthy()
+    expect(twBorderPaletteDefault).toBeTruthy()
 
 })
 
 
 
-test('TwBorderPaletteDefault.vue component text prop accepts a string value', async () => {
+test('twBorderPaletteDefault.default component returns an object with a truthy default property', async () => {
 
-    const testString = 'Test String Value'
+    expect(twBorderPaletteDefault.default).toBeTruthy()
 
-    const wrapper = mount(TwBorderPaletteDefault, {
-        props: {
-            text: testString
-        },
-    })
-
-    expect(wrapper.text()).toContain(testString)
-    
 })
 
 
 
-test('TwBorderPaletteDefault.vue component default slot accepts an element node with a child text node', async () => {
+test('twBorderPaletteDefault.default.colors component returns an object with a truthy colors property', async () => {
 
-    const testStrLiteral = `<div>Test String Value</div>`
+    expect(twBorderPaletteDefault.default.colors).toBeTruthy()
 
-    const wrapper = mount(TwBorderPaletteDefault, {
-        slots: {
-            default: testStrLiteral
-        },
-    })
+})
 
-    expect(wrapper.html()).toContain(testStrLiteral)
-    
+
+
+test('twBorderPaletteDefault component returns an object with the standard five default color names', async () => {
+
+    expect(twBorderPaletteDefault.default.colors['default']).toBe('')
+    expect(twBorderPaletteDefault.default.colors['error']).toBeTruthy()
+    expect(twBorderPaletteDefault.default.colors['primary']).toBeTruthy()
+    expect(twBorderPaletteDefault.default.colors['secondary']).toBeTruthy()
+    expect(twBorderPaletteDefault.default.colors['success']).toBeTruthy()
+
 })
