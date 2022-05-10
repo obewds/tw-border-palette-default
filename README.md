@@ -13,6 +13,8 @@ The @obewds/tw-border-palette-default modular design system component for Vue.js
 
 Check out the [official docs](https://obewds.github.io/tw-border-palette-default/) for this component for more details!
 
+Or check out the [CHANGELOG](https://github.com/obewds/tw-border-palette-default/blob/main/CHANGELOG.md) for the code base!
+
 <br>
 
 
