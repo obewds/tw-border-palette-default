@@ -1,7 +1,7 @@
 {
   "name": "@obewds/tw-border-palette-default",
   "description": "The @obewds/tw-border-palette-default modular design system component for Vue.js",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "author": "@oberocks",
   "homepage": "https://obewds.github.io/tw-border-palette-default/",
   "license": "MIT",
